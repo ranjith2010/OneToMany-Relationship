@@ -15,6 +15,10 @@
 		C615E8B91A26FA67007C001A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C615E8B81A26FA67007C001A /* Images.xcassets */; };
 		C615E8BC1A26FA67007C001A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C615E8BA1A26FA67007C001A /* LaunchScreen.xib */; };
 		C615E8C81A26FA67007C001A /* OneToManyRelationshipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C615E8C71A26FA67007C001A /* OneToManyRelationshipTests.m */; };
+		C615E8EB1A272285007C001A /* ExtraFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C615E8EA1A272285007C001A /* ExtraFieldViewController.m */; };
+		C615E8EE1A273912007C001A /* AddressDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C615E8ED1A273912007C001A /* AddressDisplayTableViewController.m */; };
+		C615E8F11A27425A007C001A /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = C615E8F01A27425A007C001A /* Address.m */; };
+		C615E8F41A27425B007C001A /* Contacts.m in Sources */ = {isa = PBXBuildFile; fileRef = C615E8F31A27425B007C001A /* Contacts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		C615E8C11A26FA67007C001A /* OneToManyRelationshipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneToManyRelationshipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C615E8C61A26FA67007C001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C615E8C71A26FA67007C001A /* OneToManyRelationshipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneToManyRelationshipTests.m; sourceTree = "<group>"; };
+		C615E8E91A272285007C001A /* ExtraFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraFieldViewController.h; sourceTree = "<group>"; };
+		C615E8EA1A272285007C001A /* ExtraFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraFieldViewController.m; sourceTree = "<group>"; };
+		C615E8EC1A273912007C001A /* AddressDisplayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDisplayTableViewController.h; sourceTree = "<group>"; };
+		C615E8ED1A273912007C001A /* AddressDisplayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDisplayTableViewController.m; sourceTree = "<group>"; };
+		C615E8EF1A27425A007C001A /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		C615E8F01A27425A007C001A /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		C615E8F21A27425B007C001A /* Contacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		C615E8F31A27425B007C001A /* Contacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacts.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +100,17 @@
 				C615E8B21A26FA67007C001A /* ViewController.h */,
 				C615E8B31A26FA67007C001A /* ViewController.m */,
 				C615E8B51A26FA67007C001A /* Main.storyboard */,
+				C615E8EC1A273912007C001A /* AddressDisplayTableViewController.h */,
+				C615E8ED1A273912007C001A /* AddressDisplayTableViewController.m */,
+				C615E8E91A272285007C001A /* ExtraFieldViewController.h */,
+				C615E8EA1A272285007C001A /* ExtraFieldViewController.m */,
 				C615E8B81A26FA67007C001A /* Images.xcassets */,
 				C615E8BA1A26FA67007C001A /* LaunchScreen.xib */,
 				C615E8AF1A26FA67007C001A /* OneToManyRelationship.xcdatamodeld */,
+				C615E8F21A27425B007C001A /* Contacts.h */,
+				C615E8F31A27425B007C001A /* Contacts.m */,
+				C615E8EF1A27425A007C001A /* Address.h */,
+				C615E8F01A27425A007C001A /* Address.m */,
 				C615E8A81A26FA67007C001A /* Supporting Files */,
 			);
 			path = OneToManyRelationship;
@@ -222,8 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C615E8EE1A273912007C001A /* AddressDisplayTableViewController.m in Sources */,
 				C615E8AE1A26FA67007C001A /* AppDelegate.m in Sources */,
 				C615E8AB1A26FA67007C001A /* main.m in Sources */,
+				C615E8EB1A272285007C001A /* ExtraFieldViewController.m in Sources */,
+				C615E8F41A27425B007C001A /* Contacts.m in Sources */,
+				C615E8F11A27425A007C001A /* Address.m in Sources */,
 				C615E8B41A26FA67007C001A /* ViewController.m in Sources */,
 				C615E8B11A26FA67007C001A /* OneToManyRelationship.xcdatamodeld in Sources */,
 			);
@@ -416,6 +440,7 @@
 				C615E8CD1A26FA67007C001A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C615E8CE1A26FA67007C001A /* Build configuration list for PBXNativeTarget "OneToManyRelationshipTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				C615E8D01A26FA67007C001A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14B25" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Address" representedClassName="Address" parentEntity="Contacts" syncable="YES">
+        <attribute name="doorno" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contacts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contacts" inverseName="addresses" inverseEntity="Contacts" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" representedClassName="Contacts" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="addresses" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Address" inverseName="contacts" inverseEntity="Address" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Address" positionX="18" positionY="81" width="128" height="88"/>
+        <element name="Contacts" positionX="-27" positionY="18" width="128" height="88"/>
+    </elements>
 </model>
