@@ -1,0 +1,14 @@
+OneToMany-Relationship
+======================
+
+Hello Friends,
+
+            Its a Very basic Relationship Application using Coredata. "Don't except too much".
+
+Here you guys can able to get some piece of knowledge in 1 To Many Relationship.
+This applicaiton is belongs to Contacts -> Address relationship. Here you can able to hear some good sounds from 'NSFetchResultsController' and relationship{like,Inverse,Cascade}
+
+
+Info:
+====
+        One Contact has too many Address rite. So based on this if you create here 1 contact, you can able to update the contact and also add too many addresses. So if you delete the Contact the Address field also will be affect.
